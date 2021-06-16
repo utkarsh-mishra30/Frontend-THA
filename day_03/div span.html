@@ -1,0 +1,55 @@
+<!--
+<style>
+    /* Div is block element. It will cover the whole space in its line. 
+    Span is inline element. 
+    Two divs will align themselves in different lines.
+    Two spans will align themselves in same line.  */
+    /* we can set margin in two ways.
+    div, span{
+        margin-top :
+        margin-right :
+        margin-bottom :
+        margin-left :
+        
+        or margin : 10px, 30px, 10px, 30px;   // It will be considered cyclic order 
+
+        Padding is done to give space for text inside box 
+    } */
+</style>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vl {
+            border-left: 6px solid black;
+            height: 800px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+        }
+        
+        .db {
+            margin: 50px, 100px, 50px, 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <span class="db"><p>Personal information</p></span>
+
+        <span class="db"><p>Work experiences</p></span>
+    </p>
+
+</body>
+
+</html>
