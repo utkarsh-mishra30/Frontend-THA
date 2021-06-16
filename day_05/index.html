@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js.js" defer></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(93, 226, 250);
+            min-height: 100vh;
+        }
+        
+        .calci {
+            background-color: black;
+            border-radius: 2px;
+            position: relative;
+            padding: 10px;
+            width: 356px;
+        }
+        
+        .screen {
+            height: 120px;
+            background-color: orange;
+            background-position-y: center;
+            margin: 4px;
+            margin-bottom: 10px;
+            text-align: right;
+            font-size: 30px;
+            overflow: auto;
+        }
+        
+        .button {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        
+        button {
+            height: 75px;
+            width: 75px;
+            font-size: 30px;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calci">
+        <div class="screen"></div>
+        <div class="button">
+
+
+            <button>(</button>
+            <button>)</button>
+            <button>C</button>
+            <button>AC</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+            <button>.</button>
+            <button>0</button>
+            <button>=</button>
+            <button>/</button>
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
