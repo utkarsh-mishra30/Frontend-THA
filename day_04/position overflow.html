@@ -1,0 +1,98 @@
+<!-- 
+    position has 5 attribute. static, relative, fixed, absolute, sticky.
+    To make any div scroll to top and fix its position to some margin on top use sticky 
+    position : sticky
+    top: 20px
+    overflow : scroll
+
+    difference between static and fixed is, in static you cant change position anyhow, whatever margin you give.
+    In fixed, you can fix a div's position to any place and give any margin.
+
+    overflow is also used sometimes. It has four properties.
+    scroll, hidden, visible, auto
+
+    semantic tags are used for specific purpose like dealing with images videos figures links header footer.
+    
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .container {
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            background-color: aqua;
+            border: 3px solid black;
+            position: relative;
+        }
+        
+        .hours,
+        .minutes,
+        .seconds {
+            position: absolute;
+            height: 10px;
+            width: 40%;
+            background-color: black;
+            left: 50%;
+            bottom: 50%;
+            transform-origin: left center;
+        }
+        
+        .hours {
+            animation: rotate calc(60s*60*12) linear infinite;
+        }
+        
+        .minutes {
+            animation: rotate calc(60s*60) linear infinite;
+        }
+        
+        .seconds {
+            animation: rotate 60s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(-90deg);
+            }
+            100% {
+                transform: rotate(270deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="hours">
+
+        </div>
+        <div class="minutes"></div>
+        <div class="seconds"></div>
+    </div>
+
+</body>
+
+</html>
