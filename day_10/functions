@@ -1,0 +1,13 @@
+The difference between normal function and arrow fuction declaration is 
+
+function sum(){
+    console.log(this)
+}
+//This will return global object 
+
+const sum = () => {
+    console.log(this)
+}
+//This will return empty object 
+
+this returns window 
