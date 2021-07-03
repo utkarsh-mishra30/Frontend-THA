@@ -1,0 +1,60 @@
+// FUNCTION CHAINING
+
+var obj = function() {
+    this.counter = 0
+    this.add = function(item){
+        this.counter += item
+        console.log(this)
+        //return something else from here
+        return this
+    }
+    this.subtract = function(item){
+        this.counter =- item
+        return this
+    }
+    this.print = function(){
+        console.log(this.counter)
+    }
+}
+
+
+var x = new obj()
+x.add(12).subtract(2).print()
+
+
+// Inheritance in JS 
+__proto__ keyword is used to inherit the property of one class to other 
+
+let shape = {
+    height : '10cm'
+    width : '10cm'
+}
+let circle = {
+    radius : '2cm'
+
+}
+let triangle = {
+    .angle : '30'
+}
+
+circle.__proto__ = shape
+
+console.log(circle.height, circle.width)
+//output 10, 10 
+
+
+Inheritance
+
+function person (first, last, age, eyeColor){
+    this.first = first
+    this.last = last 
+    this.age = age
+    this.eyeColor = eyeColor
+}
+
+const father = new person('Rohan', 'sharma', '45', 'black')
+console.log(father)
+
+person.prototype.occupation = 'Doctor'
+console.log(father.occupation)
+
