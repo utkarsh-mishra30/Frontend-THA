@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background-color: lightgreen;
+    padding: 2vmin;
+    font-size: 3vmin;
+    
+   }
+
+   
