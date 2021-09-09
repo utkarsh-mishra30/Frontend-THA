@@ -8,7 +8,7 @@ const updatePlace = (place) => {
 const updatePlaceData = (place) => {
   return (dispatch) => {
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=a808afe10fcc4ea0bf5133608212608&q=${place}`
+      `https://api.weatherapi.com/v1/current.json?key=a808afe10fcc4ea0bf5133608212608&q=${place}`
     )
       .then((res) => res.json())
       .then((data) => {
